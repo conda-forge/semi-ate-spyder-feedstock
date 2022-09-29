@@ -1,5 +1,5 @@
 {% set name = "semi-ate-spyder" %}
-{% set version = "1.0.11" %}
+{% set version = "1.0.12" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/semi-ate-spyder-{{ version }}.tar.gz
-  sha256: ea939d6a59d7a486818dcdd0202ace360ac377291ad9e9c84aa6efdf95be5040
+  sha256: 3ca325611d46ae32171c85415e579ece9819b676cb06fb6ac7c2db58023d6fe1
 
 build:
   number: 0
@@ -29,6 +29,11 @@ requirements:
     - semi-ate-project-database
     - semi-ate-sammy
     - spyder >=5.3
+    - qtpy
+    - pyqt
+    - pluggy
+    - watchdog
+    - cookiecutter
 
 test:
   imports:

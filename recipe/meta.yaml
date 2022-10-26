@@ -1,5 +1,5 @@
 {% set name = "semi-ate-spyder" %}
-{% set version = "1.0.12" %}
+{% set version = "1.0.13" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/semi-ate-spyder-{{ version }}.tar.gz
-  sha256: 3ca325611d46ae32171c85415e579ece9819b676cb06fb6ac7c2db58023d6fe1
+  sha256: 51c14013c404e46645823999777326115f6025c1b12237ea4e819efb8bb147f3
 
 build:
   number: 0

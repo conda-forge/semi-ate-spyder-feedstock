@@ -1,11 +1,11 @@
-About semi-ate-spyder
-=====================
+About semi-ate-spyder-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/semi-ate-spyder-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/semi-ate-spyder/
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/semi-ate-spyder-feedstock/blob/main/LICENSE.txt)
 
 Summary: Spyder ate plugin for working with ATE projects
 

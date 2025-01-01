@@ -7,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/semi-ate-spyder-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/semi-ate-spyder-{{ version }}.tar.gz
   sha256: 1eb77112e3eeb8fba4d6c2db1bfa959344c2456c187e2b805fb5e0bf1346913c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - numpy
     - pydantic
-    - python >=3.8
+    - python >={{ python_min }}
     - qtawesome
     - semi-ate-common
     - semi-ate-plugins
@@ -45,6 +45,7 @@ test:
     - pip
     # This build of numpydoc has broken requirements
     - numpydoc !=1.2.1=*_0
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/semi-ate-spyder/

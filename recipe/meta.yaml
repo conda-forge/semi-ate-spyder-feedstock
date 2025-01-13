@@ -46,6 +46,7 @@ test:
     - pip
     # This build of numpydoc has broken requirements
     - numpydoc !=1.2.1=*_0
+    - setuptools
 
 about:
   home: https://pypi.org/project/semi-ate-spyder/
